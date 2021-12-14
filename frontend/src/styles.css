@@ -1,0 +1,7 @@
+body {
+  background: #f5f8ff;
+}
+
+.demo > div {
+  display:  inline-block;
+}
