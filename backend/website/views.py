@@ -4,4 +4,4 @@ views = Blueprint('views', __name__)
 
 @views.route('/')
 def home():
-   return "/speed /temperature /lights"
+   return "/engspeed /get-speed /lights /radio /angle /temperature"
