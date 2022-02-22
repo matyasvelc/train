@@ -3,6 +3,8 @@ import random
 
 auth = Blueprint('auth', __name__)
 
+Speed = 0
+
 @auth.route('/setSpeed')
 def setspeed():
     global Speed
@@ -12,6 +14,36 @@ def setspeed():
 @auth.route('/getSpeed')
 def getspeed():
     return{"speed": Speed}
+
+Brake = 0
+
+@auth.route('/setBrake')
+def setbrake():
+    global Brake
+    Brake = random.randint(1,10)
+    return {"brake": Brake}
+
+@auth.route('/getBrake')
+def getbrake():
+    return {"brake": Brake}
+
+@auth.route ('/Speed')
+def speed():
+    setspeed()
+    getspeed()
+    setbrake()
+    getbrake()
+    global speedb
+    speedb = Speed - Brake
+    return {"speed": speedb}
+
+@auth.route ('/S')
+def s():
+    getspeed()
+    getbrake()
+    global Sp
+    Sp = Speed - Brake
+    return {"speed": Sp}
 
 Temperature = 0
 
@@ -25,6 +57,8 @@ def setTemp():
 def getTemp ():
     return {"temperature": Temperature}
 
+Angle = 0
+
 @auth.route ('/setAngle')
 def setAngle ():
     global Angle
@@ -34,6 +68,8 @@ def setAngle ():
 @auth.route ('/getAngle')
 def getAngle ():
     return {"angle": Angle}
+
+Engspeed = 0
 
 @auth.route ('/setEngspeed')
 def setEng ():
@@ -47,8 +83,10 @@ def getEng ():
 
 lightsetting = [True, False]
 
+lightsetting = False
+
 @auth.route ('/setLightStatus')
-def lights():
+def setLights():
     global Lights
     Lights = random.choice(lightsetting)
     return {"lights": Lights}
@@ -58,6 +96,8 @@ def getLights():
     return {"lights": Lights}
 
 radiosetting = [True, False]
+
+radiosetting = False
 
 @auth.route ('/setRadioStatus')
 def setRadio():
