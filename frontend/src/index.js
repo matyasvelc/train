@@ -24,8 +24,18 @@ const style = { float: 'left', width: 160, height: 200, marginBottom: 160, margi
 const parentStyle = { overflow: 'hidden' };
 
 const marks = {
-  '-50': '-50',
-  0: <strong>0</strong>,
+  '-50': {
+    style: {
+      color: 'red',
+    },
+    label: <strong>-50</strong>,
+  },
+  0: {
+    style: {
+      color: 'red',
+    },
+    label: <strong>0</strong>,
+  },
   50: {
     style: {
       color: 'red',
@@ -48,7 +58,7 @@ function App() {
           return res.json();
         })
         .then(data => {
-          setSpeed(data.Speed);
+          setSpeed(data.speed);
         });
     }, 1000);
     
@@ -62,7 +72,7 @@ function App() {
           return res.json();
         })
         .then(data => {
-          setTemp(data.Temperature);
+          setTemp(data.angle);
         });
     }, 1000);
     
@@ -76,7 +86,7 @@ function App() {
           return res.json();
         })
         .then(data => {
-          setRpm(data.RPM);
+          setRpm(data.engine_speed);
         });
       }, 1000);
     
