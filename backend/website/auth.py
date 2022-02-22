@@ -42,7 +42,7 @@ def getAngle ():
 
 Engspeed = 0
 
-@auth.route ('/getEngspeed')
+@auth.route ('/getRpm')
 def getEng ():
     return {"engine_speed": Speed / 2}
 
