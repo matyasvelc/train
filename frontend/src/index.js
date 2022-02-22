@@ -2,6 +2,8 @@ import React, { useEffect } from 'react'
 import ReactDOM from 'react-dom'
 import Progress from './lib/progress'
 import './styles.css'
+import Slider, { Range } from 'rc-slider';
+import 'rc-slider/assets/index.css';
 
 function App() {
   const [temp, setTemp] = React.useState()
@@ -24,7 +26,7 @@ function App() {
         return res.json();
       })
       .then(data => {
-        setTemp(data.Temprature);
+        setTemp(data.Temperature);
       });
   }, []);
 
@@ -64,6 +66,11 @@ function App() {
         reduction={0.25}
         hideBall
         gradient={[{stop: 0.0, color: '#f6416d'}, {stop: 1, color: '#fa6d7c'}]} />
+        <input id='svetla' class="svetla" type='checkbox'></input>
+        <label class="button" htmlFor='svetla'>Světla</label>
+        <button class="button" >Katapult</button>
+        <button class="button" >Klakson</button>
+        <Slider min={-50} max={50} defaultValue={0} vertical={true}/>
     </div>
   )
 }
