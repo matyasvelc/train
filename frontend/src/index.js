@@ -11,17 +11,21 @@ function App() {
   const [speed, setSpeed] = React.useState()
 
   useEffect(() => {
-    fetch('http://127.0.0.1:5000/getSpeed')
-      .then(res => {
-        return res.json();
-      })
-      .then(data => {
-        setSpeed(data.Speed);
-      });
+    const timer = setTimeout(() => {
+      fetch('http://127.0.0.1:5000/getSpeed')
+        .then(res => {
+          return res.json();
+        })
+        .then(data => {
+          setSpeed(data.Speed);
+        });
+    }, 1000);
+    
+    return () => clearTimeout(timer);
   }, []);
 
   useEffect(() => {
-    fetch('http://127.0.0.1:5000/getTemp')
+    fetch('http://127.0.0.1:5000/getAngle')
       .then(res => {
         return res.json();
       })
@@ -60,8 +64,9 @@ function App() {
         strokeWidth={10} />
       <Progress
         progress={temp}
-        max={50}
-        subtitle="°C"
+        min={-45}
+        max={45}
+        subtitle="° (naklon)"
         strokeWidth={10}
         reduction={0.25}
         hideBall
@@ -70,6 +75,7 @@ function App() {
         <label class="button" htmlFor='svetla'>Světla</label>
         <button class="button" >Katapult</button>
         <button class="button" >Klakson</button>
+        <button class="button" >Z. Brzda</button>
         <Slider min={-50} max={50} defaultValue={0} vertical={true}/>
     </div>
   )
