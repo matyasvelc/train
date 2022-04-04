@@ -1,0 +1,55 @@
+body {
+  background: #f5f8ff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  caret-color: transparent;
+  user-select: none;
+}
+
+.demo > div {
+  display:  inline-block;
+  background-image: ;
+}
+.vlak {
+  background-image:url(./train.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 90%;
+  overflow: hidden;
+  background-position: bottom;
+}
+.button {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  caret-color: transparent;
+  user-select: none;
+  font-weight:600;
+}
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.svetla{
+  display: none;
+  caret-color: transparent;
+  user-select: none;
+}
+.svetla:checked + .button{
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.rychlost{
+  user-select:all;
+}

@@ -4,6 +4,7 @@ import Progress from './lib/progress'
 import './styles.css'
 import Slider, { Range } from 'rc-slider';
 import 'rc-slider/assets/index.css';
+import rickrolla from './rickroll.gif'
 
 async function postData(url = '', data = {}) {
   // Default options are marked with *
@@ -104,18 +105,20 @@ function App() {
     setRychlost(value);
     postData('http://127.0.0.1:5000/setSpeed', {"speed": value})
   }
-
   return (
     <div className="demo">
+      <div>
       <Progress
+        className="budik1"
         progress={rpm}
-        max={4}
-        subtitle="*1000 rpm"
+        max={500}
+        subtitle="RPM"
         reduction={0.25}
         hideBall
         strokeWidth={10}
         gradient={[{stop: 0.0, color: '#f6416d'}, {stop: 1, color: '#fa6d7c'}]} />
       <Progress
+      className="budik2"
         progress={speed}
         max={100}
         subtitle="km/h"
@@ -123,6 +126,7 @@ function App() {
         hideBall
         strokeWidth={10} />
       <Progress
+      className="budik3"
         progress={temp}
         min={-45}
         max={45}
@@ -131,17 +135,21 @@ function App() {
         reduction={0.25}
         hideBall
         gradient={[{stop: 0.0, color: '#f6416d'}, {stop: 1, color: '#fa6d7c'}]} />
-        <input id='svetla' class="svetla" onClick={Svetlo} checked={svetlo} type='checkbox'></input>
-        <label class="button" htmlFor='svetla'>Světla</label>
-        <button class="button" >Katapult</button>
-        <button class="button" >Klakson</button>
-        <button class="button" >Z. Brzda</button>
+      </div>
+      <input id='svetla' class="svetla" onClick={Svetlo} checked={svetlo} type='checkbox'></input>
+        <label class="button a" htmlFor='svetla'>Světla</label>
+        <button class="button b" >Katapult</button>
+        <button class="button c" >Klakson</button>
+        <button class="button d" >Z. Brzda</button>
+
+        <div className='vlak' id='vlak'>
+        </div>
         <div style={parentStyle}>
-          <div style={style}>
-            <Slider vertical min={-50} max={50} step={2} marks={marks} included={false} onAfterChange={Rychlost} defaultValue={20}/>
+          <div style={style} className="rychlost">
+            <Slider vertical min={-50} max={50} step={2} marks={marks} included={false} onAfterChange={Rychlost} defaultValue={0}/>
           </div>
         </div>
-    </div>
+        </div>
   )
 }
 

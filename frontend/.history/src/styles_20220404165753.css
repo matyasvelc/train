@@ -1,0 +1,106 @@
+body {
+  background: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  caret-color: transparent;
+  user-select: none;
+  overflow: hidden;
+  padding: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.demo > div {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  display: inline-block;
+}
+.vlak {
+  background-image:url(./train.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-position: bottom;
+  position: absolute;
+  display: inline-block;
+}
+.budik1{
+  position: absolute;
+  top: 70%;
+  left: 45%;
+}
+.budik2{
+  position: absolute;
+  top: 70%;
+  left: 55%;
+}
+.budik3{
+  position: absolute;
+  top: 70%;
+  left: 60%;
+}
+.button {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  caret-color: transparent;
+  user-select: none;
+  font-weight:600;
+  position: absolute;
+}
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.a{
+  position: absolute;
+  top: 82%;
+  left: 19.7%;
+}
+.b{
+  position: absolute;
+  top: 82%;
+  left: 28%;
+}
+.c{
+  position: absolute;
+  top: 71.5%;
+  left: 29%;
+}
+.d{
+  position: absolute;
+  top: 71.5%;
+  left: 19%;
+}
+.svetla{
+  display: none;
+  caret-color: transparent;
+  user-select: none;
+  position: absolute;
+}
+.svetla:checked + .button{
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.rychlost{
+  user-select:all;
+  position: absolute;
+  top: ;
+  left: ;
+}
