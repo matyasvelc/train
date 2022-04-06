@@ -8,24 +8,34 @@
 <blockquote>
   <p>Velkým problémem bylo propojení jednotlivých zařízení, které se nám nakonec kromě frontendu s backendem webu nepovedlo.</p>
   <p>Nerozumění si s GitHubem a občasná ztráta progresu díky němu.</p>
-  <p>Vyzkratování drátků při špatném zapojení</p>
+  <p>Vyzkratování drátků při špatném zapojení.</p>
 </blockquote>
 
 <h3>Jak zprovoznit?</h3>
 <p>Web</p>
   <blockquote>
-  <p>Stáhněte kód a zapněte main.py</p>
-  <p>Do terminálu v frontend/src/index.js napište "npm start"</p>
+  <p>Stáhněte kód a zapněte main.py.</p>
+  <p>Do terminálu v frontend/src/index.js napište "npm start".</p>
   </blockquote>
 <p>PID</p>
   <blockquote>
-  <p>Stáhněte kód PID</p>
-  <p>Připravte si Raspberry 4, gyroskop a čip se snímačem náklonu</p>
-  <p>Zde je<a href="https://community.home-assistant.io/t/rf-reader-add-on/215938" title="Raspberry"> odkaz</a> pro připojení pinů na Raspberry 4, připojte ke snímači  náklonu a ke gyroskopu</p>
-  <p>Otevřete kód a zapněte ho</p>
+  <p>Stáhněte kód PID.</p>
+  <p>Připravte si Raspberry 4, gyroskop a čip se snímačem náklonu.</p>
+  <p>Zde je<a href="https://community.home-assistant.io/t/rf-reader-add-on/215938" title="Raspberry"> odkaz</a> pro připojení pinů na Raspberry 4, připojte ke snímači  náklonu a ke gyroskopu.</p>
+  <p>Otevřete kód a zapněte ho.</p>
   </blockquote>
 <p>Motory</p>
   <blockquote>
-  <p>Stáhněte si ovládání_motorů.py</p>
-  <p>Připravte si Rapsberry 4, H-můstek a dva motory. Podle <a href="https://www.laskakit.cz/h-mustek-pro-krokovy-motor-l298n--dualni-motorovy-modul/?fbclid=IwAR0J27osccefwn7pToaFZcSSnsyBQMDsZQR1tKhF3giljvfZypOPq0dzVVA" title="Raspberry"> návodu</a> připojte motory k H-můstku. Poté podle <a href="https://linuxhint.com/gpio-pinout-raspberry-pi/?fbclid=IwAR1znVWyQl8cOaeNnZQT-NhUi1AKmjtEbqqe3JVRpIrP07jrFHfq8apKdns" title="Raspberry"> návodu</a> připojte H-můstek k Raspeberry Pi
-  <p>Po zapnutí kódu uživatel zvolí směr a jeden ze dvou motorů včetně jeho rychlosti</p>
+  <p>Stáhněte si ovládání_motorů.py.</p>
+  <p>Připravte si Rapsberry 4, H-můstek a dva motory. Podle <a href="https://www.laskakit.cz/h-mustek-pro-krokovy-motor-l298n--dualni-motorovy-modul/?fbclid=IwAR0J27osccefwn7pToaFZcSSnsyBQMDsZQR1tKhF3giljvfZypOPq0dzVVA" title="Raspberry"> návodu</a> připojte motory k H-můstku. Poté podle <a href="https://linuxhint.com/gpio-pinout-raspberry-pi/?fbclid=IwAR1znVWyQl8cOaeNnZQT-NhUi1AKmjtEbqqe3JVRpIrP07jrFHfq8apKdns" title="Raspberry"> návodu</a> připojte H-můstek k Raspeberry Pi.
+  <p>Po zapnutí kódu uživatel zvolí směr a jeden ze dvou motorů včetně jeho rychlosti.</p>
+  </blockquote>
+  
+<h3>Na Projektu pracovali:</h3>
+  <blockquote>
+  <p>Daniel Vodička - PID</p>
+  <p>Matyáš Velc - Backend webu</p>
+  <p>Vojtěch Poupa - Frontend webu</p>
+  <p>David Straka - Motory</p>
+  <p>Ondřej Ježek - hovno</p>
+  <p>Eliška Rohlíková - Design a tisk vláčku</p>
