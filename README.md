@@ -8,6 +8,10 @@
 <blockquote>
   <p>Velkým problémem bylo propojení jednotlivých zařízení, které se nám nakonec kromě frontendu s backendem webu nepovedlo.</p>
   <p>Nerozumění si s GitHubem a občasná ztráta progresu díky němu.</p>
-<blockquote>
+</blockquote>
 
-    
+<h3>Jak zprovoznit?</h3>
+<p>Web</p>
+<blockquote>
+<p>Stáhněte kód a zapněte main.py</p>
+<p>
