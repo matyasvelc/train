@@ -37,5 +37,5 @@
   <p>Matyáš Velc - Backend webu</p>
   <p>Vojtěch Poupa - Frontend webu</p>
   <p>David Straka - Motory</p>
-  <p>Ondřej Ježek - </p>
+  <p>Ondřej Ježek - Návrh držáku serva</p>
   <p>Eliška Rohlíková - Design a tisk vláčku</p>
